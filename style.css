@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    gap: 10px;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    border-radius: 10px;
+    max-width: 700px;
+
+}
+h2{
+        font-family: 'Fraunces';
+        font-size: 40px;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imigi {
+    grid-column: 1/2;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 520px;
+    background-image: url(images/image-product-desktop.jpg);
+}
+
+.items {
+    display: grid;
+
+    
+    padding: 0 40px 0 40px ;
+}
+
+.prefume{
+    font-weight: 500;
+    padding-top: 20px;
+    letter-spacing: .4rem;
+    margin-bottom: 0;
+}
+
+.heading{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 30px;
+}
+
+.shop-button{
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    margin-top: -20px;
+}
+
+.info-text{
+    margin-top:0;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-right:45px;
+}
+.price{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.current-price{
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-weight: ;
+    font-family: 'Fraunces';
+}
+
+.shop-button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+
+@media (max-width:700px){
+   .card{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 20px;
+   }
+   .imigi{
+    background-image: url(images/image-product-mobile.jpg);
+    height: 330px;
+   }
+   .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+   }
+   .imigi{
+    border-radius: 10px 10px 0px 0px;
+   }
+   
+}
